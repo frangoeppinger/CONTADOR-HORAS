@@ -1,34 +1,30 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="esp-cl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de Horas Trabajadas</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
+    <header class="fixed-title">
+        <h1>Calculadora de Horas Trabajadas</h1>
+    </header>
     <div class="main-container">
-        <div class="fixed-title">
-            <h1>Calculadora de Horas</h1>
-        </div>
         <div class="left-column">
             <div class="container">
                 <label for="dias">Número de días (1-30):</label>
                 <input type="number" id="dias" min="1" max="30" value="1">
+                <p>Luego ingrese los datos y de click en el boton: </p>
+                <button class="button" id="calcular">Calcular Horas</button>
                 
-                <label for="formatoHora">Formato de hora:</label>
-                <select id="formatoHora">
-                    <option value="12">12 horas</option>
-                    <option value="24">24 horas</option>
-                </select>
-                
-                <button id="calcular">Calcular Horas</button>
             </div>
             <div class="resultados-container">
                 <label for="resultados">Resultados</label>
                 <div id="resultados"></div>
                 <div id="total"></div>
             </div>
+            <img src="./assets/clock-4109_128.gif" alt="Reloj" class="gif">
         </div>
         <div class="right-column">
             <div id="entradas"></div>
@@ -36,4 +32,7 @@
     </div>
     <script src="script.js"></script>
 </body>
+<footer class="footer">
+    <p>Desarrollado por @frangoeppinger 🫶 </p>
+</footer>
 </html>
